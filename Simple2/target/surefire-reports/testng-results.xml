@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="53451" started-at="2021-04-13T09:04:19 CEST" finished-at="2021-04-13T09:05:12 CEST">
+    <groups>
+    </groups>
+    <test name="Preisvergleich" duration-ms="53451" started-at="2021-04-13T09:04:19 CEST" finished-at="2021-04-13T09:05:12 CEST">
+      <class name="de.simple.testcase.Preisvergleich">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:de.simple.testcase.Preisvergleich@5ae63ade]" name="setUp" is-config="true" duration-ms="6846" started-at="2021-04-13T09:04:19 CEST" finished-at="2021-04-13T09:04:25 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="PreisinWarenkorb(int)[pri:0, instance:de.simple.testcase.Preisvergleich@5ae63ade]" name="PreisinWarenkorb" duration-ms="10235" started-at="2021-04-13T09:04:27 CEST" data-provider="PV" finished-at="2021-04-13T09:04:37 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreisinWarenkorb -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:de.simple.testcase.Preisvergleich@5ae63ade]" name="getResult" is-config="true" duration-ms="1" started-at="2021-04-13T09:04:37 CEST" finished-at="2021-04-13T09:04:37 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PreisinWarenkorb status=SUCCESS method=Preisvergleich.PreisinWarenkorb(int)[pri:0, instance:de.simple.testcase.Preisvergleich@5ae63ade] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="PreisinWarenkorb(int)[pri:0, instance:de.simple.testcase.Preisvergleich@5ae63ade]" name="PreisinWarenkorb" duration-ms="9636" started-at="2021-04-13T09:04:37 CEST" data-provider="PV" finished-at="2021-04-13T09:04:47 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreisinWarenkorb -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:de.simple.testcase.Preisvergleich@5ae63ade]" name="getResult" is-config="true" duration-ms="0" started-at="2021-04-13T09:04:47 CEST" finished-at="2021-04-13T09:04:47 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PreisinWarenkorb status=SUCCESS method=Preisvergleich.PreisinWarenkorb(int)[pri:0, instance:de.simple.testcase.Preisvergleich@5ae63ade] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="PreisinWarenkorb(int)[pri:0, instance:de.simple.testcase.Preisvergleich@5ae63ade]" name="PreisinWarenkorb" duration-ms="9748" started-at="2021-04-13T09:04:47 CEST" data-provider="PV" finished-at="2021-04-13T09:04:56 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreisinWarenkorb -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:de.simple.testcase.Preisvergleich@5ae63ade]" name="getResult" is-config="true" duration-ms="5" started-at="2021-04-13T09:04:56 CEST" finished-at="2021-04-13T09:04:56 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PreisinWarenkorb status=SUCCESS method=Preisvergleich.PreisinWarenkorb(int)[pri:0, instance:de.simple.testcase.Preisvergleich@5ae63ade] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="PreisinWarenkorb(int)[pri:0, instance:de.simple.testcase.Preisvergleich@5ae63ade]" name="PreisinWarenkorb" duration-ms="12029" started-at="2021-04-13T09:04:56 CEST" data-provider="PV" finished-at="2021-04-13T09:05:09 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreisinWarenkorb -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:de.simple.testcase.Preisvergleich@5ae63ade]" name="getResult" is-config="true" duration-ms="0" started-at="2021-04-13T09:05:09 CEST" finished-at="2021-04-13T09:05:09 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PreisinWarenkorb status=SUCCESS method=Preisvergleich.PreisinWarenkorb(int)[pri:0, instance:de.simple.testcase.Preisvergleich@5ae63ade] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="FAIL" signature="failtest()[pri:0, instance:de.simple.testcase.Preisvergleich@5ae63ade]" name="failtest" duration-ms="1" started-at="2021-04-13T09:05:09 CEST" finished-at="2021-04-13T09:05:09 CEST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at de.simple.testcase.Preisvergleich.failtest(Preisvergleich.java:117)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failtest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:de.simple.testcase.Preisvergleich@5ae63ade]" name="getResult" is-config="true" duration-ms="7" started-at="2021-04-13T09:05:09 CEST" finished-at="2021-04-13T09:05:09 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=failtest status=FAILURE method=Preisvergleich.failtest()[pri:0, instance:de.simple.testcase.Preisvergleich@5ae63ade] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDowns()[pri:0, instance:de.simple.testcase.Preisvergleich@5ae63ade]" name="tearDowns" is-config="true" duration-ms="3451" started-at="2021-04-13T09:05:09 CEST" finished-at="2021-04-13T09:05:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDowns -->
+      </class> <!-- de.simple.testcase.Preisvergleich -->
+    </test> <!-- Preisvergleich -->
+  </suite> <!-- Suite -->
+</testng-results>

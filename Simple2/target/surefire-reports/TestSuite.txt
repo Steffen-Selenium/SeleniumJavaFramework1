@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 54.239 s <<< FAILURE! - in TestSuite
+de.simple.testcase.Preisvergleich.failtest  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at de.simple.testcase.Preisvergleich.failtest(Preisvergleich.java:117)
+
