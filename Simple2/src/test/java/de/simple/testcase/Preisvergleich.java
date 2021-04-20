@@ -13,12 +13,15 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -38,7 +41,30 @@ public class Preisvergleich {
 	public ExtentTest test;
 
 	@BeforeClass
-	public void setUp() {
+	@Parameters({ "browser" })
+	public void setUp(String browserName) {
+		/*
+		 * if (driver == null) { System.setProperty("webdriver.chrome.driver",
+		 * System.getProperty("user.dir") +
+		 * "\\src\\test\\resources\\driver\\chromedriver.exe"); driver = new
+		 * ChromeDriver();
+		 */
+		if (browserName.equalsIgnoreCase("firefox")) {
+			System.setProperty("webdriver.gecko.driver",
+					System.getProperty("user.dir") + "\\src\\\\test\\resources\\driver\\geckodriver.exe");
+			driver = new FirefoxDriver();
+
+		} else if (browserName.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver",
+					System.getProperty("user.dir") + "\\src\\test\\resources\\driver\\chromedriver2.exe");
+			driver = new ChromeDriver();
+
+		} else if (browserName.equalsIgnoreCase("Edge")) {
+			System.setProperty("webdriver.edge.driver",
+					System.getProperty("user.dir") + "\\src\\test\\resources\\driver\\msedgedriver.exe");
+			driver = new EdgeDriver();
+		}
+
 		// extent Reports
 		reporter = new ExtentHtmlReporter("Report.html");
 
@@ -50,17 +76,12 @@ public class Preisvergleich {
 		extent.setSystemInfo("User Name", "Steffen");
 		// BeforeSuite
 
-		if (driver == null) {
-			System.setProperty("webdriver.chrome.driver",
-					System.getProperty("user.dir") + "\\src\\test\\resources\\driver\\chromedriver.exe");
-			driver = new ChromeDriver();
-			baseUrl = "http://automationpractice.com/index.php";
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			driver.manage().window().maximize();
-			driver.manage().deleteAllCookies();
-			driver.get(baseUrl);
+		baseUrl = "http://automationpractice.com/index.php";
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.get(baseUrl);
 
-		}
 	}
 
 	@Test(dataProvider = "PV", enabled = true)
